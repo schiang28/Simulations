@@ -20,6 +20,7 @@ pos = np.random.uniform(0, L, size=(N, 2))
 orient = np.random.uniform(-np.pi, np.pi, size=N)
 
 fig, ax = plt.subplots(figsize=(6, 6))
+plt.clf()
 
 
 def animate(i):
