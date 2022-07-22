@@ -23,7 +23,7 @@ class Particle:
         self.styles = styles
         if not self.styles:
             # Default circle styles
-            self.styles = {"edgecolor": "b", "fill": False}
+            self.styles = {"edgecolor": "b", "fill": True}
 
     # For convenience, map the components of the particle's position and
     # velocity vector onto the attributes x, y, vx and vy.
@@ -242,8 +242,8 @@ class Simulation:
 
 
 if __name__ == "__main__":
-    nparticles = 20
+    nparticles = 10
     radii = np.random.random(nparticles) * 0.03 + 0.02
-    styles = {"edgecolor": "C0", "linewidth": 2, "fill": None}
+    styles = {"edgecolor": "C0", "linewidth": 2, "fill": True}
     sim = Simulation(nparticles, radii, styles)
     sim.do_animation(save=False)
