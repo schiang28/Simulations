@@ -25,7 +25,7 @@ solids = [
     for kind, center in zip(kinds, centers)
 ]
 
-p = pv.Plotter(window_size=[1000, 1000])
+p = pv.Plotter(window_size=[2000, 1000])
 for ind, solid in enumerate(solids):
     smooth_shading = ind == len(solids) - 1
     p.add_mesh(
