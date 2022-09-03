@@ -1,7 +1,4 @@
-import numpy as np
-
 import pyvista as pv
-from pyvista import examples
 
 kinds = [
     "tetrahedron",
@@ -36,6 +33,7 @@ for ind, solid in enumerate(solids):
         specular_power=10,
         show_edges=True,
     )
+
 p.view_vector((5.0, 2, 3))
 p.add_floor("-z", lighting=True, color="tan", pad=1.0)
 p.enable_shadows()
